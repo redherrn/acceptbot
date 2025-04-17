@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python botperehod.py
+    envVars:
+      - key: TOKEN
+        sync: false
